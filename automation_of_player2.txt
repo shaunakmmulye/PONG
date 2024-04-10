@@ -1,0 +1,14 @@
+This is an algorithm to automate the paddle used by player2, so as to make the game playable for those who don't have any friends, so they can play it with the cpu.
+
+The main motive of the automated paddle is to keep the ball from touching the edge of the screen and move accordingly to save the ball from touching the edge so the opponent doesn't score a point.
+
+This can be achieved by the following steps:
+(1)Tracking the position of ball.
+(2)Checking if the ball is above or below the paddle.
+(3) If the ball is above the paddle, then move the paddle in upward direction, so as to prevent the ball from touching the edge of the screen.
+(4) If the ball is below the paddle, then move the paddle in downward direction.
+
+Some of the IMPORTANT points to be considered while doing this are:
+1. The paddle should constantly move in the direction of the ball, to catchup with it.
+2. The paddle should stop one it is at the same Y coordinate as the ball.
+3. The paddle's speed should not increase, so that as the speed of the ball increases after every collision, the player playing manually will have a chance to win. Or the player shall never win as there is no scope of human error in computer logic and it will be inaccurate.
